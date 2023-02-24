@@ -1,10 +1,26 @@
 package classses;
 
 public class Manager {
+	private int controllpoint=0;
+	
 	String text="";
+	
 	void print(String s) {
 		text += s;
 	}
+	
+	void Controller(String x) {
+		switch(controllpoint) {
+		case 0:
+			writeTerminal(x);
+			break;
+		case 1:
+			
+		}
+		
+		
+	}
+
 	String writeTerminal(String past){
 		text= "input: "+ past+"\n" ;
 		try {
